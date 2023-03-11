@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*----------FONTS----------*/
+@font-face {
+  font-family: "Work Sans Medium";
+  src: url("../fonts/WorkSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Work Sans Regular";
+  src: url("../fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Work Sans Bold";
+  src: url("../fonts/WorkSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Work Sans SemiBold";
+  src: url("../fonts/WorkSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Intan Regular";
+  src: url("../fonts/intan.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Jost Regular";
+  src: url("../fonts/Jost-Regular.ttf");
+}
+@font-face {
+  font-family: "Jost Medium";
+  src: url("../fonts/Jost-Medium.ttf");
+}
+@font-face {
+  font-family: "Monument Extended Regular";
+  src: url("../fonts/MonumentExtended-Regular.otf");
+}
+/*---------НАЧАЛЬНАЯ_НАСТРОЙКА-----------*/
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  color: black;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1482px;
+  box-sizing: content-box;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*----------HEADER----------*/
+.header {
+  padding-top: 57px;
+  padding-bottom: 607px;
+  max-width: 100%;
+  background-image: url("../img/header/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+  position: relative;
+}
+@media (min-width: 1800px) {
+  .header {
+    background-position: center 65%;
+    padding-bottom: 400px;
+  }
+}
+@media (max-width: 1490px) {
+  .header {
+    padding-bottom: 500px;
+  }
+}
+@media (max-width: 1380px) {
+  .header {
+    padding-bottom: 400px;
+  }
+}
+@media (max-width: 1260px) {
+  .header {
+    padding-bottom: 300px;
+  }
+}
+.header__menu:not(:last-child) {
+  margin-bottom: 76px;
+}
+.header__body {
+  max-width: 100%;
+  text-align: center;
+}
+.header__title {
+  max-width: 1128px;
+  margin: 0 auto;
+  color: white;
+  font-family: "Work Sans Bold";
+  font-size: 82px;
+  line-height: 117%;
+}
+.header__title:not(:last-child) {
+  margin-bottom: 24px;
+}
+.header__subtitle {
+  max-width: 583px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: "Work Sans Regular";
+  font-size: 24px;
+  line-height: 150%;
+}
+.header__subtitle:not(:last-child) {
+  margin-bottom: 54px;
+}
+.header__search {
+  max-width: 463px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  align-items: center;
+  padding: 10px 0;
+}
+.header__input-search {
+  flex: 1 0 auto;
+  margin-left: 30px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-family: "Work Sans Regular";
+  font-size: 20px;
+  line-height: 115%;
+  padding-right: 15px;
+}
+.header__input-search::placeholder {
+  color: #FFFFFF;
+}
+.header__btn-search {
+  margin-right: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+.header__plant-info-container {
+  position: absolute;
+  width: 1492px;
+  height: 100%;
+  left: 50%;
+  margin-left: -746px;
+  pointer-events: none;
+}
+@media (max-width: 1490px) {
+  .header__plant-info-container {
+    width: 1372px;
+    margin-left: -686px;
+  }
+}
+@media (max-width: 1380px) {
+  .header__plant-info-container {
+    width: 1252px;
+    margin-left: -626px;
+  }
+}
+@media (max-width: 1260px) {
+  .header__plant-info-container {
+    width: 1132px;
+    margin-left: -566px;
+  }
+}
+@media (min-width: 1740px) {
+  .header__plant-info-container {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1800px), (max-width: 1140px) {
+  .header__plant-info-container {
+    display: none;
+  }
+}
+
+.menu {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu__nav {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.menu__list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.menu__item:not(:last-child) {
+  margin-right: 68px;
+}
+.menu__link {
+  font-family: "Work Sans Regular";
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 116.6%;
+}
+.menu__link._word-gradient {
+  font-family: "Work Sans SemiBold";
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.package-menu {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+}
+.package-menu__circle {
+  width: 21px;
+  height: 21px;
+  left: 46.15%;
+  top: 8.2%;
+  bottom: 34.38%;
+  position: absolute;
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  border-radius: 50%;
+}
+.package-menu__number {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 15%;
+  font-family: "Work Sans Bold";
+  font-size: 14px;
+  line-height: 114%;
+}
+
+.plant-info {
+  position: absolute;
+}
+.plant-info__btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  user-select: none;
+}
+.plant-info__btn::before {
+  content: "";
+  display: block;
+  background: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+.plant-info__info {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 24px;
+  max-width: 205px;
+  color: #FFFFFF;
+  font-family: "Work Sans Bold";
+  position: absolute;
+  display: none;
+}
+.plant-info__price {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 118.75%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 75px;
+}
+.plant-info__price:not(:last-child) {
+  margin-bottom: 12px;
+}
+.plant-info__name {
+  font-size: 16px;
+  line-height: 111.76%;
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+._number-one {
+  left: 0;
+  top: 33%;
+}
+
+._number-two {
+  left: 95%;
+  top: 50%;
+}
+
+._number-three {
+  left: 4%;
+  top: 48%;
+}
+
+@media (min-width: 1740px) {
+  ._number-one {
+    left: 6%;
+    top: 33%;
+  }
+
+  ._number-two {
+    left: 90%;
+    top: 50%;
+  }
+
+  ._number-three {
+    left: 10%;
+    top: 48%;
+  }
+}
+._number-one .plant-info__info, ._number-three .plant-info__info {
+  bottom: 115%;
+}
+
+._number-two .plant-info__info {
+  bottom: 115%;
+  right: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */

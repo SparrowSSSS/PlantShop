@@ -1,0 +1,34 @@
+$fonts: (
+    "Work Sans Medium": "../fonts/WorkSans-Medium.ttf",
+    "Work Sans Regular": "../fonts/WorkSans-Regular.ttf",
+    "Work Sans Bold": "../fonts/WorkSans-Bold.ttf",
+    "Work Sans SemiBold": "../fonts/WorkSans-SemiBold.ttf",
+    "Intan Regular": "../fonts/intan.otf",
+    "Jost Regular": "../fonts/Jost-Regular.ttf",
+    "Jost Medium": "../fonts/Jost-Medium.ttf",
+    "Monument Extended Regular": "../fonts/MonumentExtended-Regular.otf"
+);
+
+@each $family, $url in $fonts {
+    @if $family == "Intan Regular" {
+        @font-face {
+            font-family: "Intan Regular";
+            src: url($url);
+            font-weight: 400;
+        }
+    } @else {
+        @font-face {
+            font-family: $family;
+            src: url($url);
+        }
+    }
+}
+
+$WSM: "Work Sans Medium";
+$WSR: "Work Sans Regular";
+$WSB: "Work Sans Bold";
+$WSSb: "Work Sans SemiBold";
+$IR: "Intan Regular";
+$JR: "Jost Regular";
+$JM: "Jost Medium";
+$MER: "Monument Extended Regular";
