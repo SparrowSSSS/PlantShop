@@ -273,7 +273,7 @@ html, body {
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 1000;
+  z-index: 2000;
 }
 .menu__nav {
   flex: 1 0 auto;
@@ -307,7 +307,25 @@ html, body {
 }
 @media (max-width: 769px) {
   .menu {
+    position: fixed;
+    margin: 0;
+    background-color: #293035;
+    padding: 15px;
+    border-radius: 10px;
+    top: 5px;
+    left: 50px;
     display: none;
+  }
+  .menu__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu__link {
+    font-size: 20px;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -336,9 +354,15 @@ html, body {
   font-size: 14px;
   line-height: 114%;
 }
+@media (max-width: 769px) {
+  .package-menu {
+    margin-left: 20px;
+  }
+}
 
 .plant-info {
   position: absolute;
+  z-index: 3000;
 }
 .plant-info__btn {
   cursor: pointer;
