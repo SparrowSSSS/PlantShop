@@ -222,6 +222,8 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: black;}
     align-items: center;
     position: relative;
     z-index: $z-index3;
+    transition: 300ms;
+    transform-origin: left top;
 
     &__nav {
         flex: 1 0 auto;
@@ -267,7 +269,7 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: black;}
         border-radius: 10px;
         top: 5px;
         left: 50px;
-        display: none;
+        transform: scale(0);
 
         &__list {
             flex-direction: column;
@@ -360,7 +362,9 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: black;}
         bottom: 110%;
         left: 200%;
         margin-left: -75px;
-        display: none;
+        transition: 300ms;
+        transform: scale(0);
+        transform-origin: bottom left;
     }
 
     &__price {
@@ -397,6 +401,7 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: black;}
 
 ._number-two .plant-info__info {
     left: -200%;
+    transform-origin: bottom right;
 }
 
 ._number-three {
