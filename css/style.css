@@ -16,23 +16,6 @@
   font-family: "Work Sans SemiBold";
   src: url("../fonts/WorkSans-SemiBold.ttf");
 }
-@font-face {
-  font-family: "Intan Regular";
-  src: url("../fonts/intan.otf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Jost Regular";
-  src: url("../fonts/Jost-Regular.ttf");
-}
-@font-face {
-  font-family: "Jost Medium";
-  src: url("../fonts/Jost-Medium.ttf");
-}
-@font-face {
-  font-family: "Monument Extended Regular";
-  src: url("../fonts/MonumentExtended-Regular.otf");
-}
 /*---------НАЧАЛЬНАЯ_НАСТРОЙКА-----------*/
 *, *::before, *::after {
   padding: 0;
