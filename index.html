@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="home">
             <div class="header__black-background"></div>
             <div class="header__plant-info-container">
                 <div class="header__plant-info plant-info _number-one">
@@ -47,10 +47,10 @@
                 <div class="header__menu menu">
                     <nav class="menu__nav">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="" class="menu__link _word-gradient">Home</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Shop</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">About Us</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+                            <li class="menu__item"><a data-anchorposition="" href="#home" class="menu__link _word-gradient">Home</a></li>
+                            <li class="menu__item"><a data-anchorposition="" href="#shop" class="menu__link">Shop</a></li>
+                            <li class="menu__item"><a data-anchorposition="" href="#aboutus" class="menu__link">About Us</a></li>
+                            <li class="menu__item"><a data-anchorposition="" href="#contact" class="menu__link">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="menu__package package-menu">
@@ -67,17 +67,303 @@
                         With Interior Plants</div>
                     <div class="header__subtitle">find your dream plant for you home decoration with us, and we will
                         make it happen.</div>
-                    <div class="header__search">
-                        <input type="text" placeholder="Search plant" class="header__input-search">
-                        <div class="header__btn-search">
+                    <div class="header__search search">
+                        <input type="text" placeholder="Search plant" class="search__input-search">
+                        <div class="search__btn-search">
                             <img src="img/header/search/btn-search.svg" alt="Search">
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="page"></main>
-        <footer class="footer"></footer>
+        <main class="page">
+            <section class="page__advantages advantages">
+                <div class="advantages__container _container">
+                    <div class="advantages__body">
+                        <div class="advantages__column">
+                            <div class="advantages__icon">
+                                <img src="img/page/advantages/1.svg" alt="box">
+                            </div>
+                            <div class="advantages__content">
+                                <div class="advantages__title">Free Shapping</div>
+                                <div class="advantages__subtitle">No charge for each delivery</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__icon">
+                                <img src="img/page/advantages/2.svg" alt="wallet">
+                            </div>
+                            <div class="advantages__content">
+                                <div class="advantages__title">Quick Payment</div>
+                                <div class="advantages__subtitle">100% secure payment</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__icon">
+                                <img src="img/page/advantages/3.svg" alt="сonnection">
+                            </div>
+                            <div class="advantages__content">
+                                <div class="advantages__title">24/7 Support</div>
+                                <div class="advantages__subtitle">Quick support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__bestseller bestseller" id="shop">
+                <div class="bestseller__container _container">
+                    <div class="bestseller__body">
+                        <div class="bestseller__head-title head-title">
+                            <div class="head-title__title">Best Seller
+                                Product</div>
+                            <div class="head-title__subtitle">
+                                <p>See all colection</p>
+                                <a href="" class="bestseller__allcollection">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bestseller__products">
+                            <div class="bestseller__product product">
+                                <div class="product__plant-img">
+                                    <img src="img/page/bestseller/plant-img/1.png" alt="Cammile">
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__container-content">
+                                        <div class="product__name">Cammile</div>
+                                        <div class="product__rating">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                        </div>
+                                        <div class="product__price">$65.00</div>
+                                        <div class="product__pay">
+                                            <img src="img/page/bestseller/btn/btn-pay.svg" alt="pay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bestseller__product product">
+                                <div class="product__plant-img">
+                                    <img src="img/page/bestseller/plant-img/2.png" alt="Cammile">
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__container-content">
+                                        <div class="product__name">Cammile</div>
+                                        <div class="product__rating">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                        </div>
+                                        <div class="product__price">$65.00</div>
+                                        <div class="product__pay">
+                                            <img src="img/page/bestseller/btn/btn-pay.svg" alt="pay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bestseller__product product">
+                                <div class="product__plant-img">
+                                    <img src="img/page/bestseller/plant-img/3.png" alt="Cammile">
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__container-content">
+                                        <div class="product__name">Cammile</div>
+                                        <div class="product__rating">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                            <img src="img/page/bestseller/star/star.svg" alt=""
+                                                class="product__star _active-star">
+                                        </div>
+                                        <div class="product__price">$65.00</div>
+                                        <div class="product__pay">
+                                            <img src="img/page/bestseller/btn/btn-pay.svg" alt="pay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__plant-reference plant-reference" id="aboutus">
+                <div class="plant-reference__container _container">
+                    <div class="plant-reference__head-title head-title">
+                        <div class="head-title__title">Interior Plant Reference</div>
+                        <div class="head-title__subtitle">
+                            <p>make your home so comfortable with refreshing plants</p>
+                        </div>
+                    </div>
+                    <div class="plant-reference__body">
+                        <a href="" class="plant-reference__reference _gridone">
+                            <div class="plant-reference__reference-background">
+                                <p>living room</p>
+                            </div>
+                            <img src="img/page/plant-reference/brown-sofa-wooden-table-living-room-interior-with-plant-concrete-wall.png"
+                                alt="living room">
+                        </a>
+                        <a href="" class="plant-reference__reference _gridtwo">
+                            <div class="plant-reference__reference-background">
+                                <p>living room</p>
+                            </div>
+                            <img src="img/page/plant-reference/unsplash_MBsReSZ2WNM.png" alt="living room">
+                        </a>
+                        <a href="" class="plant-reference__reference _gridthree">
+                            <div class="plant-reference__reference-background">
+                                <p>living room</p>
+                            </div>
+                            <img src="img/page/plant-reference/high-angle-desk-arrangement-with-plants.png"
+                                alt="living room">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__howtocare howtocare">
+                <div class="howtocare__container _container">
+                    <div class="howtocare__body">
+                        <div class="howtocare__content">
+                            <div class="howtocare__head-title head-title">
+                                <div class="head-title__title">How to care for plants</div>
+                                <div class="head-title__subtitle">
+                                    <p>Take care of plants with all your heart</p>
+                                </div>
+                            </div>
+                            <div class="howtocare__items">
+                                <div class="howtocare__item item-howtocare">
+                                    <div class="item-howtocare__icon">
+                                        <img src="img/page/howtocare/icons/sun.svg" alt="sun">
+                                    </div>
+                                    <div class="item-howtocare__text">
+                                        <div class="item-howtocare__title">Adjust Lighting</div>
+                                        <div class="item-howtocare__subtitle">When caring for indoor plants, make sure the room temperature is neither too cold nor too hot</div>
+                                    </div>
+                                </div>
+                                <div class="howtocare__item item-howtocare">
+                                    <div class="item-howtocare__icon">
+                                        <img src="img/page/howtocare/icons/water.svg" alt="water">
+                                    </div>
+                                    <div class="item-howtocare__text">
+                                        <div class="item-howtocare__title">Don't water too often</div>
+                                        <div class="item-howtocare__subtitle">Watering ornamental plants indoors does not have to be done every day.</div>
+                                    </div>
+                                </div>
+                                <div class="howtocare__item item-howtocare">
+                                    <div class="item-howtocare__icon">
+                                        <img src="img/page/howtocare/icons/plant.svg" alt="plant">
+                                    </div>
+                                    <div class="item-howtocare__text">
+                                        <div class="item-howtocare__title">Don't water too often</div>
+                                        <div class="item-howtocare__subtitle">Watering ornamental plants indoors does not have to be done every day.</div>
+                                    </div>
+                                </div>
+                                <div class="howtocare__item item-howtocare">
+                                    <div class="item-howtocare__icon">
+                                        <img src="img/page/howtocare/icons/temperature.svg" alt="temperature">
+                                    </div>
+                                    <div class="item-howtocare__text">
+                                        <div class="item-howtocare__title">Fertilize regularly</div>
+                                        <div class="item-howtocare__subtitle">The nutrients most indoor houseplants need are nitrogen for balance and potassium for stem strength</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="howtocare__image">
+                            <img src="img/page/howtocare/image/unsplash.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="contact">
+            <div class="footer__container _container">
+                <div class="footer__mainbody">
+                    <div class="footer__newslatter newslatter">
+                        <div class="newslatter__title">Newslatter</div>
+                        <div class="newslatter__search search">
+                            <input type="text" class="search__input-search" placeholder="Enter your email">
+                            <button type="button" class="search__btn-search">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="footer__contacts contacts">
+                        <div class="contacts__column">
+                            <div class="contacts__title">Support</div>
+                            <ul class="contacts__items">
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">About Us</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Careers</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts__column">
+                            <div class="contacts__title">Useful Link</div>
+                            <ul class="contacts__items">
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Payment & Tax</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Team of service</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Privaci Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts__column">
+                            <div class="contacts__title">Our Menu</div>
+                            <ul class="contacts__items">
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Best Product</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">Category</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts__column">
+                            <div class="contacts__title">Address</div>
+                            <ul class="contacts__items">
+                                <li class="contacts__item">
+                                    <a href="" class="contacts__link">JL. Setiabudhi No. 193 Sukasari, Bandung
+                                        West Java, Indonesia</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="mailto:hallo@daunku.com" class="contacts__link">hallo@daunku.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2023 davixq - All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="js/main.js"></script>
 </body>

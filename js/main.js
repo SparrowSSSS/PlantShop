@@ -90,7 +90,44 @@ function windowResize() {
 }
 
 window.onload = () => {
+    const home = document.querySelector(".header");
+    const shop = document.querySelector(".bestseller");
+    const aboutUs = document.querySelector(".plant-reference");
+    const contact = document.querySelector(".footer");
+
+    let windowHeight = document.documentElement.clientHeight + scrollY;
+
+    document.querySelector(".menu__link[href='#home']").dataset.anchorposition = home.getBoundingClientRect().top + scrollY;
+    document.querySelector(".menu__link[href='#shop']").dataset.anchorposition = shop.getBoundingClientRect().top + scrollY;
+    document.querySelector(".menu__link[href='#aboutus']").dataset.anchorposition = aboutUs.getBoundingClientRect().top + scrollY;
+    document.querySelector(".menu__link[href='#contact']").dataset.anchorposition = contact.getBoundingClientRect().top + scrollY;
+
+    const linkArray = document.querySelectorAll(".menu__link");
+    let newLinkArray = [];
+
+    linkArray.forEach(item => {
+        newLinkArray.push(item);
+    });
+
+    newLinkArray = newLinkArray.reverse();
+
+    function menuActivePosition(windowHeight) {
+        const preventActiveLink = document.querySelector(".menu__link._word-gradient");
+        const newActiveLink = newLinkArray.find(item => windowHeight > item.dataset.anchorposition);
+        preventActiveLink.classList.remove("_word-gradient");
+        newActiveLink.classList.add("_word-gradient");
+    };
+
+    function windowScroll() {
+        window.addEventListener("scroll", () => {
+            windowHeight = document.documentElement.clientHeight + scrollY;
+            menuActivePosition(windowHeight);
+        });
+    }
+
+    menuActivePosition(windowHeight);
+    windowResize();
+    windowScroll();
     bodyClick();
     headerPlantInfo();
-    windowResize();
 };
